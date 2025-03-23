@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+xmlns:tools="http://schemas.android.com/tools" 
+package="com.prjct.nyx"> 
+<uses-feature 
+android:name="android.hardware.camera" 
+android:required="false" /> 
+<uses-permission android:name="android.permission.INTERNET" /> 
+<uses-permission 
+android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+<uses-permission 
+android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+<uses-permission android:name="android.permission.CAMERA" /> 
+<uses-permission android:name="android.permission.RECORD_AUDIO" /> 
+<uses-permission android:name="android.permission.STORAGE" /> 
+<uses-permission android:name="android.permission.VIBRATE" /> 
+<!-- <uses-permission 
+android:name="android.permission.MANAGE_DOCUMENTS" 
+tools:ignore="ProtectedPermissions" />--> 
+<uses-permission 
+android:name="android.permission.MANAGE_EXTERNAL_STORAGE" 
+tools:ignore="ScopedStorag"/> 
+<uses-permission android:name="android.permission.MANAGE_MEDIA" 
+tools:ignore="ProtectedPermissions" /> 
+48  
+<uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" 
+/> 
+<uses-feature android:name="android.hardware.microphone" android:required="true" /> 
+<application 
+android:allowBackup="true" 
+android:icon="@drawable/yellowicon" 
+android:label="@string/app_name" 
+android:preserveLegacyExternalStorage="true" 
+android:protectionLevel="signature" 
+android:requestLegacyExternalStorage="true" 
+android:roundIcon="@drawable/mainicon" 
+android:supportsRtl="true" 
+android:exported="true" 
+android:taskAffinity=".string" 
+android:theme="@style/Theme.Assistant" 
+tools:ignore="MissingClass"> 
+<activity android:name="com.prjct.nyx.SampleWork"/> 
+<activity android:name="com.prjct.nyx.Bookmark" /> 
+<activity android:name="com.prjct.nyx.Login" /> 
+<activity android:name="com.prjct.nyx.Register" /> 
+<activity android:name="com.prjct.nyx.AddingFiles" /> 
+<activity android:name="com.prjct.nyx.Notes" /> 
+<activity android:name="com.prjct.nyx.AddingNotes" /> 
+<activity android:name="com.prjct.nyx.AddingData" /> 
+<activity android:name="com.prjct.nyx.UserSearch" /> 
+<activity android:name="com.prjct.nyx.VoiceSeach" /> 
+<activity android:name="com.prjct.nyx.RecordAudio" /> 
+<activity 
+49  
+ 
+  50  
+            android:name="com.prjct.nyx.PdfToSpeak" 
+            android:exported="true" 
+            android:label="@string/title_activity_pdf_to_speak" 
+            android:theme="@style/Theme.Assistant.NoActionBar"> 
+            <intent-filter> 
+                <action android:name="android.intent.action.CALL" /> 
+                <category android:name="android.intent.category.LAUNCHER" /> 
+            </intent-filter> 
+        </activity> 
+        <activity android:name="com.prjct.nyx.ScanToSpeak" /> 
+        <activity android:name="com.prjct.nyx.TextToSpeak" /> 
+        <activity android:name="com.prjct.nyx.SpeechToText"> 
+        </activity> 
+        <activity 
+            android:name="com.prjct.nyx.audio.MainPage" 
+            android:exported="true"> 
+        </activity> 
+        <activity android:name="com.prjct.nyx.InstructionsActivity" 
+            android:exported="true"/> 
+        <activity android:name="com.prjct.nyx.MainActivity" 
+            android:exported="true"/> 
+        <activity 
+            android:name="com.prjct.nyx.Home" 
+            android:exported="true"> 
+        </activity> 
+        <activity 
+            android:name="com.prjct.nyx.Splash" 
+            android:exported="true" 
+ 
+  51  
+            tools:node="merge"> 
+            <intent-filter> 
+                <action android:name="android.intent.action.MAIN" /> 
+                <category android:name="android.intent.category.LAUNCHER" /> 
+            </intent-filter> 
+        </activity> 
+      <!--  <meta-data 
+            android:name="com.google.android.gms.vision.DEPENDENCIES" 
+            android:value="ocr" /> 
+        <meta-data 
+            android:name="com.google.android.gms.version" 
+            android:value="@integer/google_play_services_version" />--> 
+       <!-- <meta-data 
+            android:name="com.google.firebase.messaging.default_notification_icon" 
+            android:resource="@drawable/logo" /> 
+        <meta-data 
+            android:name="android.support.multidex.MultiDexApplication" 
+            android:resource="@string/yourValue" />--> 
+    </application> 
+</manifest>
